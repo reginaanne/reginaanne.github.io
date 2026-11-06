@@ -1,2 +1,123 @@
-# regina.github.io
-Regina's website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regina Fairbanks – Postdoctoral Researcher</title>
+  <meta name="description" content="Personal website of Your Name, postdoctoral researcher at Your Institution.">
+  <style>
+    :root {
+      --bg: #f7f9fb;
+      --ink: #1b2430;
+      --muted: #5b6675;
+      --rule: #d5dce4;
+      --accent: #1f4e79;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12171d;
+        --ink: #e4e9ef;
+        --muted: #9aa6b5;
+        --rule: #2b3541;
+        --accent: #8fb8e0;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: 1.125rem;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+    a { color: var(--accent); text-underline-offset: 0.18em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    header { margin-bottom: 2.5rem; }
+    h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 0.25rem; letter-spacing: -0.01em; }
+    .role { color: var(--muted); margin: 0; }
+    nav { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 1rem; }
+    section { padding-top: 2rem; margin-top: 2rem; border-top: 1px solid var(--rule); }
+    h2 { font-size: 1.4rem; margin: 0 0 0.75rem; }
+    .about { display: flex; gap: 1.5rem; align-items: flex-start; }
+    .about img { width: 9rem; height: 9rem; object-fit: cover; border-radius: 50%; flex: none; background: var(--rule); }
+    .about p:first-child { margin-top: 0; }
+    @media (max-width: 34rem) { .about { flex-direction: column; } }
+    ul.pubs { padding: 0; list-style: none; margin: 0; }
+    ul.pubs li { margin-bottom: 1rem; }
+    .meta { color: var(--muted); font-size: 1rem; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Your Name</h1>
+      <p class="role">Postdoctoral Researcher, Department of Ecology and Evolution, The University of Chicago</p>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" style="border-top:0; padding-top:0; margin-top:0;">
+        <h2>About</h2>
+        <div class="about">
+          <!-- Add a photo: put headshot.jpg in the repo root, then uncomment the next line -->
+          <!-- <img src="headshot.jpg" alt="Portrait of Your Name"> -->
+          <div>
+            <p>I am a postdoctoral researcher in the Kreiner Lab at The University of Chicago, where I study the evolution of domesticated and weedy species in the <i>Amarnathus</i> genus.</p>
+            <p>I completed my PhD in Populaion Biology advised by Dr. Jeffrey Ross-Ibarra at UC Davis in 2026. Before that, I completed a BA in Biology with minors in Anthropology and Archaeological Science at the University of Pennsylvania.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <p>My work focuses on how plants evolve in human-modified landscapes. I am particularly interested in the origin and evolution of domesticated plant species.</p>
+        <p>Current projects: <strong>[Demographic histories in maize]</strong>.</p>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul class="pubs">
+          <li>
+            <strong>Fairbanks RA</strong>, Ross-Ibarra J. (2025).
+            An ancient origin of the naked grains of maize. <em>PNAS</em>.
+            <a href="https://doi.org/10.1073/pnas.2503748122">DOI</a>
+          </li>
+          <li>
+            Lin AT, <strong>RA Fairbanks</strong>, Barba-Montoya J, Liu H-L, Kistler L (2025).
+            A legacy of genetic entanglement with wolves shapes modern dogs. <em>PNAS</em>.
+            <a href="https://doi.org/10.1073/pnas.242176812">DOI</a>
+          </li>
+        </ul>
+        <p class="meta">Full list on <a href="https://scholar.google.com/citations?user=y7E_QZ4AAAAJ&hl=en">Google Scholar</a>.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:reginaf@uchicago">reginaf@uchicago</a><br>
+          Office: Zoology Building, The University of Chicago, Chicago, IL, USA
+        </p>
+        <p>
+          <a href="https://scholar.google.com/citations?user=y7E_QZ4AAAAJ&hl=en">Google Scholar</a> ·
+          <a href="https://orcid.org/0000-0003-4485-0376">ORCID</a> ·
+          <!-- <a href="https://github.com/">GitHub</a> · -->
+          <!-- <a href="your-cv.pdf">CV (PDF)</a> -->
+        </p>
+      </section>
+    </main>
+
+    <footer>© 2026 Your Name</footer>
+
+  </div>
+</body>
+</html>
